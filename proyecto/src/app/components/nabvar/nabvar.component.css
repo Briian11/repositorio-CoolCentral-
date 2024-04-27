@@ -1,0 +1,24 @@
+.mb-0{
+    margin-left: 50%;
+    font-size: 2.2em;
+}
+
+li a {
+    font-size: 1.3em;
+    transition: color 0.5s, transform 0.5s; /* Define la transición para el cambio de color y de transformación */
+  }
+  
+  li:hover a {
+    color: white; /* Cambia el color del texto al pasar el ratón */
+    transform: translateX(10px); /* Desplaza el texto hacia la derecha */
+  }
+  .clothing-link {
+    color: inherit; /* Hereda el color del texto del contenedor */
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+    transition: color 0.5s; /* Transición para cambiar el color del texto */
+}
+
+.clothing-link:hover {
+    color: white; /* Cambia el color del texto a blanco al pasar el ratón por encima */
+    transition: color 0.5s; /* Transición para cambiar el color del texto */
+}
