@@ -1,0 +1,25 @@
+.container{
+    
+    padding: 5%;
+    margin-left: 14%;
+    
+    
+    
+}
+
+
+#slide{
+    margin-left: 15%;
+}
+#info {
+    max-height: 300px; /* Ajusta esta altura máxima según tus necesidades */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+}
+#botonAñadir{
+    background-color: black;
+    border-color: aliceblue;
+}
+.card-img-top{
+    width: 60%;
+}
+
