@@ -5,6 +5,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NabvarComponent } from './components/nabvar/nabvar.component';
 import { LogInComponent } from './components/log-in/log-in.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 export const routes: Routes = [
     { path: '',   redirectTo: '/home', pathMatch: 'full' },
@@ -14,4 +15,5 @@ export const routes: Routes = [
     { path: 'cart', component: CartComponent},
     {path: 'log-in', component: LogInComponent},
     { path: 'footer', component: FooterComponent},
+    {path: 'about-us', component: AboutUsComponent}
 ];
