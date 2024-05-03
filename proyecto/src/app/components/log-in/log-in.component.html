@@ -1,1 +1,58 @@
-<p>log-in works!</p>
+<!-- Container para todo el contenido -->
+<div class="container mt-5">
+    <!-- Sección de inicio de sesión -->
+    <div class="row justify-content-center">
+      <div class="col-5">
+        <div class="card" >
+          <div class="card-header text-center text-light" id="loginHeader">
+            <img src="../../../assets/logo.png" alt="" width="300px">
+          </div>
+        
+          <div class=" card-body bg-light text-dark ">
+            <!-- Formulario de inicio de sesión -->
+            <form>
+              <!-- Campo para el correo electrónico -->
+              <div class="form-group mb-3">
+                <label for="form2Example1">Username</label>
+                <br>
+                <input type="email" id="form2Example1" class="form-control" placeholder="Username" />
+              </div>
+              
+              <!-- Campo para la contraseña -->
+              <div class="form-group mb-3">
+                <label for="form2Example2">Password</label>
+                <input type="password" id="form2Example2" class="form-control" placeholder="Password..." />
+              </div>
+  
+              <!-- Opciones adicionales -->
+              <div class="row mb-3">
+                <!-- Opción "Recordar mi sesión" -->
+                <div class="col d-flex align-items-center">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="form2Example31" checked />
+                    <label class="form-check-label" for="form2Example31">Recordar mi sesión</label>
+                  </div>
+                </div>
+  
+                <!-- Opción "Olvidaste tu contraseña?" -->
+                <div class="col text-end">
+                  <a href="#!">¿Olvidaste tu contraseña?</a>
+                </div>
+              </div>
+  
+              <!-- Botón para enviar el formulario -->
+              <div class="text-center mb-3">
+                <button type="button" class="btn btn-dark">Iniciar Sesión</button>
+              </div>
+              
+              <!-- Sección para el registro -->
+              <div class="text-center">
+                <p>¿No tienes una cuenta? <a href="/registro">Regístrate</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
