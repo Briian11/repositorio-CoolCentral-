@@ -1,0 +1,36 @@
+{
+    "imagenes": [
+        {
+            "nombre": "chaqueta", 
+            "ruta": "/chaqueta_c.png"
+        }, 
+        {
+            "nombre": "chaqueta", 
+            "ruta": "/sudadera_c.png"
+        }, 
+        {
+            "nombre": "pantalones", 
+            "ruta": "/pantalon_c.png"
+        }, 
+        {
+            "nombre": "camisetas", 
+            "ruta": "/camiseta1.png"
+        }, 
+        {
+            "nombre": "reloj", 
+            "ruta": "/reloj1.png"
+        }, 
+        {
+            "nombre": "zapatillas", 
+            "ruta": "/zapatillas1.3.png"
+        }, 
+        {
+            "nombre": "gorras", 
+            "ruta": "/gorra_c.png"
+        }, 
+        {
+            "nombre": "joyas", 
+            "ruta": "/colgar1.png"
+        }
+    ]
+}
