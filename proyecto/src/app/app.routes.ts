@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NabvarComponent } from './components/nabvar/nabvar.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { RegisterComponent } from './components/register/register.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
@@ -17,6 +18,7 @@ export const routes: Routes = [
     {path: 'log-in', component: LogInComponent},
     { path: 'footer', component: FooterComponent},
     {path: 'about-us', component: AboutUsComponent},
+    {path: 'register', component: RegisterComponent},
     { path: '**', component: PageNotFoundComponent }
 ];
 
