@@ -4,3 +4,11 @@ color: brown;
 #loginHeader{ 
    background-color:rgba(33,37,41,255);
 }
+.card {
+ 
+  
+   border-radius: 0.1px; /* Redondear las esquinas */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de elevación */
+   
+   margin: 20px auto; /* Centra la tarjeta horizontalmente */
+}
