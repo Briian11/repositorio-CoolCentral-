@@ -55,32 +55,69 @@
                             </tr>
                             <tr>
                                 <td>Payment Method:</td>
-                                <td>
-                                    <select class="form-control">
-                                        <option value="creditCard">Credit Card</option>
-                                        <option value="paypal">PayPal</option>
-                                        <option value="bankTransfer">Bank Transfer</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="cardNumber" class="form-label">Card Number</label>
-                                            <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="expiryDate" class="form-label">Expiry Date</label>
-                                            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="cvv" class="form-label">CVV</label>
-                                            <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit Payment</button>
-                                    </form>
-                                </td>
+                      <td>
+                        <select class="form-control" [(ngModel)]="selectedPaymentMethod">
+                          <option value="creditCard">Credit Card</option>
+                          <option value="paypal">PayPal</option>
+                          <option value="bankTransfer">Bank Transfer</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <ng-container [ngSwitch]="selectedPaymentMethod">
+                            <div *ngSwitchCase="'creditCard'">
+                              <form>
+                                <div class="form-group">
+                                  <label for="cardholderName">Cardholder Name:</label>
+                                  <input type="text" class="form-control" id="cardholderName" name="cardholderName" [(ngModel)]="cardholderName">
+                                </div>
+                                <div class="form-group">
+                                  <label for="cardNumber">Card Number:</label>
+                                  <input type="text" class="form-control" id="cardNumber" name="cardNumber" [(ngModel)]="cardNumber">
+                                </div>
+                                <div class="form-group">
+                                  <label for="expirationDate">Expiration Date:</label>
+                                  <input type="text" class="form-control" id="expirationDate" name="expirationDate" [(ngModel)]="expirationDate">
+                                </div>
+                                <div class="form-group">
+                                  <label for="cvv">CVV:</label>
+                                  <input type="text" class="form-control" id="cvv" name="cvv" [(ngModel)]="cvv">
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Pay</button>
+                              </form>
+                            </div>
+                            <div *ngSwitchCase="'paypal'">
+                              <form>
+                                <div class="form-group">
+                                  <label for="paypalUsername">Username:</label>
+                                  <input type="text" class="form-control" id="paypalUsername" name="paypalUsername" [(ngModel)]="paypalUsername">
+                                </div>
+                                <div class="form-group">
+                                  <label for="paypalPassword">Password:</label>
+                                  <input type="password" class="form-control" id="paypalPassword" name="paypalPassword" [(ngModel)]="paypalPassword">
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Pay</button>
+                              </form>
+                            </div>
+                            <div *ngSwitchCase="'bankTransfer'">
+                              <form>
+                                <div class="form-group">
+                                  <label for="accountHolderName">Account Holder Name:</label>
+                                  <input type="text" class="form-control" id="accountHolderName" name="accountHolderName" [(ngModel)]="accountHolderName">
+                                </div>
+                                <div class="form-group">
+                                  <label for="accountNumber">Account Number:</label>
+                                  <input type="text" class="form-control" id="accountNumber" name="accountNumber" [(ngModel)]="accountNumber">
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Pay</button>
+                              </form>
+                            </div>
+                            <div *ngSwitchDefault>Please select a payment method</div>
+                          </ng-container>
+                          
+                        
+                      </td>
                             </tr>
                         </tbody>
                     </table>
