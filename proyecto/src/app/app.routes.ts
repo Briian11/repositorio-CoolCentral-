@@ -17,7 +17,7 @@ export const routes: Routes = [
     {path: 'log-in', component: LogInComponent},
     { path: 'footer', component: FooterComponent},
     {path: 'about-us', component: AboutUsComponent},
-    { path: '**', component: PageNotFoundComponent }
+    { path: '**', component: PageNotFoundComponent },
 ];
 
 

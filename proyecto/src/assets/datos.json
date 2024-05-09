@@ -1,36 +1,44 @@
 {
-    "imagenes": [
+    "productos" : [
         {
-            "nombre": "chaqueta", 
-            "ruta": "/chaqueta_c.png"
+            "id":1, 
+            "nombre": "Chaqueta MKL", 
+            "imagen": "./assets/Jacket.png", 
+            "descripcion": "chaqueta de charoll de color negro",
+            "categoria":"chaqueta", 
+            "precio": "140€"
         }, 
         {
-            "nombre": "chaqueta", 
-            "ruta": "/sudadera_c.png"
+            "id":2, 
+            "nombre": "sudadera Over", 
+            "imagen": "./assets/sudadera_c.png", 
+            "descripcion": "sudadera oversize de color negro",
+            "categoria":"sudadera", 
+            "precio": "60€"
+        },
+        {
+            "id":3, 
+            "nombre": "pantalones slim ", 
+            "imagen": "./pantalon_c.png", 
+            "descripcion": "pantalones slim ",
+            "categoria":"pantalones", 
+            "precio": "60"
         }, 
         {
-            "nombre": "pantalones", 
-            "ruta": "/pantalon_c.png"
+            "id":4, 
+            "nombre": "camiseta palm", 
+            "imagen": "./camiseta1.png", 
+            "descripcion": "camiseta de palm de hombre",
+            "categoria":"camisetas", 
+            "precio": "40€"
         }, 
         {
-            "nombre": "camisetas", 
-            "ruta": "/camiseta1.png"
-        }, 
-        {
-            "nombre": "reloj", 
-            "ruta": "/reloj1.png"
-        }, 
-        {
-            "nombre": "zapatillas", 
-            "ruta": "/zapatillas1.3.png"
-        }, 
-        {
-            "nombre": "gorras", 
-            "ruta": "/gorra_c.png"
-        }, 
-        {
-            "nombre": "joyas", 
-            "ruta": "/colgar1.png"
+            "id":5, 
+            "nombre": "reloj MKL", 
+            "imagen": "/reloj1.png", 
+            "descripcion": "reloj automatico de oro blanco bañado en negro",
+            "categoria":"reloj", 
+            "precio": "340€"
         }
     ]
 }
