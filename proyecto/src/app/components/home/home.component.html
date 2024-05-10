@@ -1,109 +1,35 @@
-<body>
 <div class="container-fluid p-5">
-    <img src="../../../assets/banner_copia.png" alt="Banner" class="w-100">
+  <img src="../../../assets/banner_copia.png" alt="Banner" class="w-100">
+</div>
+<div class="container-fluid p-3">
+  <img src="../../../assets/clothing_catalog.png" alt="Banner" class="w-100">
+</div>
+<hr class="my-0 border-4 border-primary">
+
+
+
+
+@if (bdata)
+{
+<div class="row justify-content-center">
+  @for (productos of bdata.productos; track productos) {
+  <div class="card" style="width: 18rem;" [routerLink]="'/product/' + productos.id">
+    <div class="card-header">
+      {{productos.nombre}}
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <img src="{{productos.imagen[0]}}" />
+      </li>
+    </ul>
   </div>
-  <div class="container-fluid p-3">
-    <img src="../../../assets/clothing_catalog.png" alt="Banner" class="w-100">
-  </div>
-  <hr class="my-0 border-4 border-primary">
+  }
+</div>
+}
+
+
+
+
+
+
   
-
-
-<!-- 
-      @if (productos) {
-        @for (producto of productos.productos; track producto) {
-          <img src="{{producto.imagen}}">
-      }
-    }  -->
-
-
-        <!-- TARJETAS DE PRODUCTOS -->
-  <!-- <div class="container">
-    <div class="row">
-                <div class="col-md-3">
-                  <a  href="/product" class="card-link" routerLinkActive="active">
-                      <div class="card text">
-                          <img src="../../../assets/chaqueta_c.png" class="card-img" alt="Chaqueta">
-                          <div class="text-center">
-                            <h4 class="card-title">Jackets</h4>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-md-3">
-                  <a href="/product" class="card-link">
-                      <div class="card text">
-                          <img src="../../../assets/sudadera_c.png" class="card-img" alt="Sudadera">
-                          <div class="text-center">
-                            <h4 class="card-title">Hoddies</h4>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              
-              <div class="col-md-3">
-                  <a href="/product" class="card-link">
-                      <div class="card text">
-                          <img src="../../../assets/pantalon_c.png" class="card-img" alt="Pantalón">
-                          <div class="text-center">
-                            <h4 class="card-title">Jeans</h4>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-md-3">
-                <a href="/product" class="card-link">
-                    <div class="card text">
-                        <img src="../../../assets/camiseta1.png" class="card-img" alt="Pantalón">
-                        <div class="text-center">
-                          <h4 class="card-title">T-shirts</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-             
-              <div class="col-md-3">
-                <a href="/product" class="card-link">
-                    <div class="card text">
-                        <img src="../../../assets/reloj1.png" class="card-img" alt="Pantalón">
-                        <div class="text-center">
-                          <h4 class="card-title">Watches</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-          <div class="col-md-3">
-            <a href="/product" class="card-link">
-                <div class="card text">
-                    <img src="../../../assets/zapatillas1.3.png" class="card-img" alt="Pantalón">
-                    <div class="text-center">
-                      <h4 class="card-title">Sneakers</h4>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/product" class="card-link">
-              <div class="card text">
-                  <img src="../../../assets/gorra_c.png" class="card-img" alt="Gorra">
-                  <div class="text-center">
-                    <h4 class="card-title">Caps</h4>
-                  </div>
-              </div>
-          </a>
-      </div>
-        <div class="col-md-3">
-          <a href="/product" class="card-link">
-              <div class="card text">
-                  <img src="../../../assets/colgar1.png" class="card-img" alt="Pantalón">
-                  <div class="text-center">
-                    <h4 class="card-title">Jewelry</h4>
-                  </div>
-              </div>
-          </a>
-        </div>
-  </div>
-</div>       -->
-</body>
-
