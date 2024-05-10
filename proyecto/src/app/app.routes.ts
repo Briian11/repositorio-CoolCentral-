@@ -12,12 +12,13 @@ export const routes: Routes = [
     { path: '',   redirectTo: '/home', pathMatch: 'full' },
     {path: 'home', component: HomeComponent},
     {path: 'nabvar', component: NabvarComponent},
-    { path: 'product', component: ProductComponent},
+    { path: 'product/:id', component: ProductComponent},
     { path: 'cart', component: CartComponent},
     {path: 'log-in', component: LogInComponent},
     { path: 'footer', component: FooterComponent},
     {path: 'about-us', component: AboutUsComponent},
-    { path: '**', component: PageNotFoundComponent },
+    { path: '**', component: PageNotFoundComponent }
+    
 ];
 
 

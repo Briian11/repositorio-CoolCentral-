@@ -2,43 +2,155 @@
     "productos" : [
         {
             "id":1, 
-            "nombre": "Chaqueta MKL", 
-            "imagen": "./assets/Jacket.png", 
+            "nombre": "Jacket MKL", 
+            "imagen": ["/assets/chaqueta_c.png", "./assets/Jacket.png", "./assets/Jacket.png"], 
             "descripcion": "chaqueta de charoll de color negro",
             "categoria":"chaqueta", 
-            "precio": "140€"
+            "precio": "140€",
+            "related": [
+                {
+                    "imagen":"./assets/sudadera_c.png"
+                }, 
+                {
+                    "imagen": "./assets/pantalon_c.png"
+                },
+                {
+                    "imagen": "./assets/camiseta1.png"
+                }
+            ]
         }, 
         {
             "id":2, 
-            "nombre": "sudadera Over", 
-            "imagen": "./assets/sudadera_c.png", 
+            "nombre": "Hoddie Over", 
+            "imagen": ["./assets/sudadera_c.png","./assets/sudadera_c.png","./assets/sudadera_c.png"], 
             "descripcion": "sudadera oversize de color negro",
             "categoria":"sudadera", 
-            "precio": "60€"
+            "precio": "60€", 
+            "related": [
+                {
+                    "imagen": "./assets/camiseta1.png"
+                },
+                {
+                    "imagen": "./assets/pantalon_c.png"
+                },
+                {
+                    "imagen": "./assets/reloj1.png"
+                }
+            ]
         },
         {
             "id":3, 
-            "nombre": "pantalones slim ", 
-            "imagen": "./pantalon_c.png", 
+            "nombre": "Jeans Slim ", 
+            "imagen": ["./assets/pantalon_c.png","./assets/pantalon_c.png","./assets/pantalon_c.png"], 
             "descripcion": "pantalones slim ",
             "categoria":"pantalones", 
-            "precio": "60"
+            "precio": "60",
+            "related": [
+                {
+                    "imagen": "./assets/camiseta1.png"
+                },
+                {
+                    "imagen": "./assets/cup.png"
+                },
+                {
+                    "imagen": "./assets/reloj1.png"
+                }
+            ]
         }, 
         {
             "id":4, 
-            "nombre": "camiseta palm", 
-            "imagen": "./camiseta1.png", 
+            "nombre": "T-shirt Palm", 
+            "imagen": ["./assets/camiseta1.png","./assets/camiseta1.png","./assets/camiseta1.png"], 
             "descripcion": "camiseta de palm de hombre",
             "categoria":"camisetas", 
-            "precio": "40€"
+            "precio": "40€",
+            "related": [
+                {
+                    "imagen": "./assets/Jacket.png"
+                },
+                {
+                    "imagen": "./assets/pantalon_c.png"
+                },
+                {
+                    "imagen": "./assets/reloj1.png"
+                }
+            ]
         }, 
         {
             "id":5, 
-            "nombre": "reloj MKL", 
-            "imagen": "/reloj1.png", 
+            "nombre": "Watch MKL", 
+            "imagen": ["./assets/reloj1.png","./assets/reloj1.png","./assets/reloj1.png"], 
             "descripcion": "reloj automatico de oro blanco bañado en negro",
             "categoria":"reloj", 
-            "precio": "340€"
+            "precio": "340€", 
+            "related": [
+                {
+                    "imagen": "./assets/camiseta1.png"
+                },
+                {
+                    "imagen": "./assets/pantalon_c.png"
+                },
+                {
+                    "imagen": "./assets/reloj1.png"
+                }
+            ]
+        }, 
+        {
+            "id":6, 
+            "nombre": "Men's jewelry", 
+            "imagen": ["./assets/colgar1.png","./assets/colgar1.png","./assets/colgar1.png"], 
+            "descripcion": "Joyas de oro blanco",
+            "categoria":"Joya", 
+            "precio": "1340€",
+            "related": [
+                {
+                    "imagen": "./assets/camiseta1.png"
+                },
+                {
+                    "imagen": "./assets/pantalon_c.png"
+                },
+                {
+                    "imagen": "./assets/cup.png"
+                }
+            ]
+        }, 
+        {
+            "id":7, 
+            "nombre": "Cap", 
+            "imagen": ["./assets/cup.png","./assets/cup.png","./assets/cup.png"], 
+            "descripcion": "Gorra de terciopelo",
+            "categoria":"Caps", 
+            "precio": "20€",
+            "related": [
+                {
+                    "imagen": "./assets/camiseta1.png"
+                },
+                {
+                    "imagen": "./assets/pantalon_c.png"
+                },
+                {
+                    "imagen": "./assets/reloj1.png"
+                }
+            ]
+        },
+        {
+            "id":7, 
+            "nombre": "Sneaker TD", 
+            "imagen": ["./assets/zapatillas2.png","./assets/zapatillas2.png","./assets/zapatillas2.png"], 
+            "descripcion": "Gorra de terciopelo",
+            "categoria":"Caps", 
+            "precio": "20€", 
+            "related": [
+                {
+                    "imagen": "./assets/camiseta1.png"
+                },
+                {
+                    "imagen": "./assets/pantalon_c.png"
+                },
+                {
+                    "imagen": "./assets/reloj1.png"
+                }
+            ]
         }
     ]
 }

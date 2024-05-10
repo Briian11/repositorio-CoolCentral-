@@ -35,3 +35,24 @@ hr{
     margin: 0 auto;
 }
 
+img{
+  height: 100%;
+  width: 100%;
+}
+
+.card-header{
+justify-content: center;
+text-align: center;
+background-color: inherit;
+border-bottom: 3px solid black;
+}
+
+.card{
+background-color: inherit;
+}
+
+
+ul li {
+  background-color: inherit;
+}
+
