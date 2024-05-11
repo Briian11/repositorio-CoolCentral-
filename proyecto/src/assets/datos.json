@@ -134,7 +134,7 @@
             ]
         },
         {
-            "id":7, 
+            "id":8, 
             "nombre": "Sneaker TD", 
             "imagen": ["./assets/zapatillas2.png","./assets/zapatillas2.png","./assets/zapatillas2.png"], 
             "descripcion": "Gorra de terciopelo",
