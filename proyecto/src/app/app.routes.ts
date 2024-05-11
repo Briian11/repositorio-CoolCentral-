@@ -5,6 +5,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NabvarComponent } from './components/nabvar/nabvar.component';
 import { LogInComponent } from './components/log-in/log-in.component';
+import { RegisterComponent } from './components/register/register.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
@@ -15,6 +16,7 @@ export const routes: Routes = [
     { path: 'product/:id', component: ProductComponent},
     { path: 'cart', component: CartComponent},
     {path: 'log-in', component: LogInComponent},
+    {path: 'register', component: RegisterComponent},
     { path: 'footer', component: FooterComponent},
     {path: 'about-us', component: AboutUsComponent},
     { path: '**', component: PageNotFoundComponent }

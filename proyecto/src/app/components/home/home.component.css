@@ -14,9 +14,6 @@
     background-color: transparent;
   }
 
-  .container-fluid{
-    margin-top: -2%;
-}
 .card:hover {
     box-shadow: 0 0 10px black;
     transition: 0.5s;
@@ -54,5 +51,20 @@ background-color: inherit;
 
 ul li {
   background-color: inherit;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  /* Ajustar el ancho máximo */
+  max-width: 100%; /* Limita el ancho máximo al 100% */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+/* Eliminar el margen negativo de .container-fluid */
+.container-fluid {
+  margin-top: -2%;
+  /* Ajustar el ancho máximo */
+  max-width: 100%; /* Limita el ancho máximo al 100% */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
 
