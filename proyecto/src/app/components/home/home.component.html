@@ -1,4 +1,3 @@
-<body>
 <div class="container-fluid p-5">
     <img src="../../../assets/banner_copia.png" alt="Banner" class="w-100">
   </div>
@@ -14,7 +13,7 @@
 {
 <div class="row justify-content-center">
   @for (productos of bdata.productos; track productos) {
-  <div class="card" style="width: 18rem;" [routerLink]="'/product/'+ productos.id">
+  <div class="card" style="width: 23rem;" [routerLink]="'/product/'+ productos.id">
     <div class="card-header">
       {{productos.nombre}}
     </div>
