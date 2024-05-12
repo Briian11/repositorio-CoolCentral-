@@ -44,7 +44,7 @@
             "imagen": ["./assets/pantalon_c.png","./assets/pantalon_c.png","./assets/pantalon_c.png"], 
             "descripcion": "pantalones slim ",
             "categoria":"pantalones", 
-            "precio": "60",
+            "precio": "50€",
             "related": [
                 {
                     "imagen": "./assets/camiseta1.png"
@@ -139,7 +139,7 @@
             "imagen": ["./assets/zapatillas2.png","./assets/zapatillas2.png","./assets/zapatillas2.png"], 
             "descripcion": "Gorra de terciopelo",
             "categoria":"Caps", 
-            "precio": "20€", 
+            "precio": "140€", 
             "related": [
                 {
                     "imagen": "./assets/camiseta1.png"

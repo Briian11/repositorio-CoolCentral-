@@ -3,8 +3,49 @@
     margin: 20px auto; /* Centra la tarjeta horizontalmente */
     
     
-    
+    background-color: inherit;
 }
 
 
+.carousel-inner{
+    background-color: lightsteelblue;
 
+}
+
+.carousel-item {
+    padding: 50px 50px;
+
+}
+
+
+.card{
+    background-color: inherit;
+    border-bottom: 3px solid lightslategray ; 
+    
+}
+
+.card-img{
+    border-right: 0px inherit; 
+    padding: 30px 2px;
+}
+
+
+.card-header{
+    background-color: inherit;
+    border-bottom: 3px solid lightslategray;
+}
+
+#botonAñadir{
+    display: flex;
+justify-content: center;
+}
+
+
+.card:hover {
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+
+.card-header{
+    text-align: center;
+}

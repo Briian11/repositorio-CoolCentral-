@@ -13,13 +13,13 @@
 {
 <div class="row justify-content-center">
   @for (productos of bdata.productos; track productos) {
-  <div class="card" style="width: 18rem;" [routerLink]="'/product/' + productos.id">
+  <div class="card" style="width: 18rem;" [routerLink]="'/product/'+ productos.id">
     <div class="card-header">
       {{productos.nombre}}
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        <img src="{{productos.imagen[0]}}" />
+        <img src="{{productos.imagen[0]}}"/>
       </li>
     </ul>
   </div>
