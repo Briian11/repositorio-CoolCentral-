@@ -12,8 +12,20 @@
 }
 .no-margin {
   margin-top: 0; /* Elimina el margen superior */
-  margin-bottom: 0; /* Elimina el margen inferior */
+  margin-bottom: 2.5%; /* Elimina el margen inferior */
+  border: 2px solid black;
 }
 .nav-item {
   font-size: 1.5em; /* Ajusta el tamaño de fuente según sea necesario */
+ 
 }
+
+svg{
+  width: 11%;
+  height: 11%;
+  
+}
+
+
+
+

@@ -15,17 +15,23 @@
     transition: 0.5s;
 }
 
+#banner-2{
+  margin-top: 2%;
+}
+
 .card {
     background-color:rgba(176, 196, 222, 0.384);   /*rgba(108, 117, 125, 0.5)/* Aplica el color secondary con transparencia 0.5 */
     color: black;
-    margin-top: 8%;
+    margin-top: 2%;
+    margin-bottom: 3%;
     border: 0px none; 
     transition: box-shadow 0.5s ease; /* Aplica una transición suave a la propiedad box-shadow */
 }
 
 hr{
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
+
 }
 
 img{
