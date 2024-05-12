@@ -12,7 +12,6 @@ import { Producto } from '../../common/catalogo';
   styleUrl: './cart.component.css'
 })
 export class CartComponent implements OnInit {
-  posicion:number=0;
   productosEnCarrito : Producto[] = [];
   selectedPaymentMethod: string;
   cardholderName: string;
@@ -41,19 +40,9 @@ export class CartComponent implements OnInit {
   }
   ngOnInit(): void {
     this.productosEnCarrito = this.carritoService.obtenerProductos();
-    throw new Error('Method not implemented.');
+  
   }
 
   // Función para incrementar la cantidad
-  increaseQuantity = () => {
-    this.quantity++;
-  }
-
-  // Función para decrementar la cantidad
-  decreaseQuantity() {
-    // Verificar que la cantidad sea mayor que 1 antes de decrementar
-    if (this.quantity > 1) {
-      this.quantity--
-    }
-  }
+  
 }

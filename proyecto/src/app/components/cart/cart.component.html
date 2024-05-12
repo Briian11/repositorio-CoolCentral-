@@ -6,52 +6,26 @@
                   <div class="col"><h4><b>Shopping Cart</b></h4></div>
                   <div class="col align-self-center text-right text-muted">3 items</div>
               </div>
-          </div>    
-          <div class="row border-top border-bottom">
-              <div class="row main align-items-center">
-                  <div class="col-2"><img class="img-fluid" src="{{productosEnCarrito[0].imagen}}"></div>
-                  <div class="col">
-                      <div class="row text-muted">{{productosEnCarrito[0].nombre}}</div>
-                      <div class="row">{{productosEnCarrito[0].descripcion}}</div>
-                  </div>
-                  <div class="col">
-                    <button class="btn-quantity" (click)="decreaseQuantity()">-</button>
-                    <span class="quantity">1</span>
-                    <button class="btn-quantity" (click)="increaseQuantity()">+</button>
-                  </div>
-                  <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="row main align-items-center">
-                  <div class="col-2"><img class="img-fluid" src="{{productosEnCarrito[1].imagen}}"></div>
-                  <div class="col">
-                      <div class="row text-muted">{{productosEnCarrito[1].nombre}}</div>
-                      <div class="row">{{productosEnCarrito[1].descripcion}}</div>
-                  </div>
-                  <div class="col">
-                    <button class="btn-quantity" (click)="decreaseQuantity()">-</button>
-                    <span class="quantity">1</span>
-                    <button class="btn-quantity" (click)="increaseQuantity()">+</button>
-                  </div>
-                  <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
-              </div>
-          </div>
-          <div class="row border-top border-bottom">
-            <div class="row main align-items-center">
-                <div class="col-2"><img class="img-fluid" src="{{productosEnCarrito[2].imagen}}"></div>
-                <div class="col">
-                    <div class="row text-muted">{{productosEnCarrito[2].nombre}}</div>
-                    <div class="row">{{productosEnCarrito[2].descripcion}}</div>
+          </div>  
+          @if (productosEnCarrito)
+{
+            <div class="row border-top border-bottom">
+            @for (productos of productosEnCarrito; track productos) {
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="{{productos.imagen}}"></div>
+                    <div class="col">
+                        <div class="row text-muted">{{productos.nombre}}</div>
+                        <div class="row">{{productos.descripcion}}</div>
+                    </div>
+                    
+                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
                 </div>
-                <div class="col">
-                  <button class="btn-quantity" (click)="decreaseQuantity()">-</button>
-                  <span class="quantity">1</span>
-                  <button class="btn-quantity" (click)="increaseQuantity()">+</button>
-                </div>
-                <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+            }
             </div>
-          </div>
+            }
+ 
+          
+          
           <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
       </div>
       <div class="col-md-4 summary">
