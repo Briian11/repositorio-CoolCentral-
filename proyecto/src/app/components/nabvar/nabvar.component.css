@@ -1,80 +1,19 @@
-.mb-0{
-    margin-left: 30%;
-    font-size: 2.2em;
-}
-
-li a {
-    font-size: 1.3em;
-    transition: color 0.5s, transform 0.5s; /* Define la transición para el cambio de color y de transformación */
-  }
-  
-  li:hover a {
-    color: white; /* Cambia el color del texto al pasar el ratón */
-    transform: translateX(10px); /* Desplaza el texto hacia la derecha */
-  }
-  .clothing-link {
-    color: inherit; /* Hereda el color del texto del contenedor */
-    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
-    transition: color 0.5s; /* Transición para cambiar el color del texto */
+.clothing-link {
+  color: black; /* Color del texto por defecto */
+  text-decoration: none; /* Quita el subrayado */
+  transition: color 0.5s; /* Transición para el cambio de color */
+  font-size: 2em;
+  margin-top: -1.5%;
 }
 
 .clothing-link:hover {
-    color: white; /* Cambia el color del texto a blanco al pasar el ratón por encima */
-    transition: color 0.5s; /* Transición para cambiar el color del texto */
+  color: white; /* Cambia el color del texto al pasar el ratón */
+  transition: color 0.5s; /* Transición para el cambio de color al pasar el ratón */
 }
-
-.container{
-  display: flex;
-  justify-content: center;
+.no-margin {
+  margin-top: 0; /* Elimina el margen superior */
+  margin-bottom: 0; /* Elimina el margen inferior */
 }
-
-.navbar-brand{
-display: flex;
-justify-content: left;
-}
-
-.container-fluid{
-  display: flex;
-flex-direction: row-reverse;
-}
-
-svg{
-  height: 30%;
-  width: 30%;
-  display: flex;
-}
-
-
-
-.col-md-2{
-text-align: center;
-justify-content: center;
-align-items: center;
-
-}
-
-.row{
-  display: flex;
-  justify-content: center;
-padding: 0% 25%;
-align-items: center;
-justify-items: center;
-margin-top: 1%;
-margin-bottom: -1%;
-display: flex;
-}
-
-hr{
-  border: solid 3px black; 
-}
-
-.container-1{
-display: flex;
-margin: 0% 27%;
-display: flex;
-}
-
-a{
-  text-decoration: none;
-  color: black; 
+.nav-item {
+  font-size: 1.5em; /* Ajusta el tamaño de fuente según sea necesario */
 }

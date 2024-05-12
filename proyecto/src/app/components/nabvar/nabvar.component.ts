@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './nabvar.component.css'
 })
 export class NabvarComponent {
+  scrollToFavourites() {
+    const percentage = 55; // Puedes ajustar el porcentaje aquí
+    const windowHeight = window.innerHeight;
+    const scrollAmount = (percentage / 100) * (document.body.scrollHeight - windowHeight);
+    window.scrollTo(0, scrollAmount);
+  }
 
 }
