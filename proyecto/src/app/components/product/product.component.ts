@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { DataService } from '../../data/data.service';
 import { Producto } from '../../common/producto';
+import { CarritoService } from './../../cart.service';
 
 @Component({
   selector: 'app-product',
@@ -14,11 +15,14 @@ import { Producto } from '../../common/producto';
 
 export class ProductComponent implements OnInit{
   producto !: Producto; 
+  
   constructor(
     private apiservice: DataService,
     private activeRoute: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private carritoService: CarritoService
   ) {}
+
   ngOnInit(): void {
     this.activeRoute.params.subscribe(params => {
       const id = +params['id']; // El "+" convierte el parámetro a número
@@ -31,4 +35,8 @@ export class ProductComponent implements OnInit{
         console.error('ID de producto inválido');
       }
     });}
+    agregarAlCarrito() {
+      this.carritoService.agregarAlCarrito(this.producto);
+      this.router.navigate(['/cart']); 
+    }
  }
