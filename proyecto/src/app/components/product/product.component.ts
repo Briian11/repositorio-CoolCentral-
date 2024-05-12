@@ -37,6 +37,11 @@ export class ProductComponent implements OnInit{
     });}
     agregarAlCarrito() {
       this.carritoService.agregarAlCarrito(this.producto);
-      this.router.navigate(['/cart']); 
+      this.guardarProductosEnLocalStorage(); // Guardar productos en el localStorage
+    this.router.navigate(['/cart']);
+    }
+    private guardarProductosEnLocalStorage() {
+      const productosEnCarrito = this.carritoService.obtenerProductos();
+      localStorage.setItem('cartItems', JSON.stringify(productosEnCarrito));
     }
  }

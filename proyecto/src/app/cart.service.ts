@@ -6,15 +6,15 @@ import { Producto } from './common/catalogo';
   providedIn: 'root'
 })
 export class CarritoService {
-  productos: Producto[] = [];
+  private productosEnCarrito: Producto[] = [];
 
   constructor() { }
 
   agregarAlCarrito(producto: Producto) {
-    this.productos.push(producto);
+    this.productosEnCarrito.push(producto);
   }
 
-  obtenerProductos() {
-    return this.productos;
+  obtenerProductos(): Producto[] {
+    return this.productosEnCarrito;
   }
 }

@@ -39,7 +39,10 @@ export class CartComponent implements OnInit {
     
   }
   ngOnInit(): void {
-    this.productosEnCarrito = this.carritoService.obtenerProductos();
+    const cartItems = localStorage.getItem('cartItems');
+    if (cartItems) {
+      this.productosEnCarrito = JSON.parse(cartItems);
+    }
   
   }
 
