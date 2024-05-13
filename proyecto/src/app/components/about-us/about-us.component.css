@@ -31,11 +31,11 @@ body {
 }
 
 .parallax-image-02 {
-    background-image: url("../../../assets/coolhumilde.jpg");
+    background-image: url("../../../assets/coolnew.jpg");
 
 }
 .parallax-image-03 {
-    background-image: url("../../../assets/coolnew.jpg");
+    background-image: url("../../../assets/coolhumilde.jpg");
 }
 section {
     padding: 4rem;
