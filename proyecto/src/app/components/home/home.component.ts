@@ -4,6 +4,7 @@ import { Catalogo } from '../../common/catalogo';
 import { RouterLink } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
   bdata!: Catalogo; 
   ngOnInit(): void {
     this.loadcatalogo() 
+    
   }
 
   loadcatalogo(){

@@ -12,7 +12,7 @@ import { Producto } from '../../common/catalogo';
   styleUrl: './cart.component.css'
 })
 export class CartComponent implements OnInit {
-  productosEnCarrito : Producto[] = [];
+   productosEnCarrito : Producto[] = [];
   selectedPaymentMethod: string;
   cardholderName: string;
   cardNumber: string;
@@ -25,7 +25,7 @@ export class CartComponent implements OnInit {
   quantity: number = 1; // Inicializar cantidad
 
   constructor(private carritoService: CarritoService) {
-    
+   
     this.selectedPaymentMethod = '';
     this.cardholderName = '';
     this.cardNumber = '';
@@ -38,14 +38,13 @@ export class CartComponent implements OnInit {
     
     
   }
+ 
   ngOnInit(): void {
-    const cartItems = localStorage.getItem('cartItems');
-    if (cartItems) {
-      this.productosEnCarrito = JSON.parse(cartItems);
-    }
-  
+    
+    this.productosEnCarrito  = this.carritoService.obtenerProductos();
+    
   }
 
-  // Función para incrementar la cantidad
+
   
 }
