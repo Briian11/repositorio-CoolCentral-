@@ -7,6 +7,9 @@ body{
     font-size: 0.8rem;
     font-weight: bold;
 }
+#cartaCarrito{
+    margin-bottom: 2%;
+}
 .title{
     margin-bottom: 5vh;
 }
