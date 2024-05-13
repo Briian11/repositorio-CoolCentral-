@@ -12,7 +12,7 @@
             <div class="row border-top border-bottom">
             @for (productos of productosEnCarrito; track productos) {
                 <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="{{productos.imagen}}"></div>
+                    <div class="col-2"><img class="img-fluid" src="{{productos.imagen[1]}}"></div>
                     <div class="col">
                         <div class="row text-muted">{{productos.nombre}}</div>
                         <div class="row">{{productos.descripcion}}</div>
