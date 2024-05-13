@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { CarritoService } from './../../../app/cart.service';
+import { Producto } from '../../common/catalogo';
 
 @Component({
   selector: 'app-cart',
@@ -9,7 +11,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
-export class CartComponent {
+export class CartComponent implements OnInit {
+   productosEnCarrito : Producto[] = [];
   selectedPaymentMethod: string;
   cardholderName: string;
   cardNumber: string;
@@ -21,7 +24,8 @@ export class CartComponent {
   accountNumber: string;
   quantity: number = 1; // Inicializar cantidad
 
-  constructor() {
+  constructor(private carritoService: CarritoService) {
+   
     this.selectedPaymentMethod = '';
     this.cardholderName = '';
     this.cardNumber = '';
@@ -31,18 +35,16 @@ export class CartComponent {
     this.paypalPassword = '';
     this.accountHolderName = '';
     this.accountNumber = '';
+    
+    
+  }
+ 
+  ngOnInit(): void {
+    
+    this.productosEnCarrito  = this.carritoService.obtenerProductos();
+    
   }
 
-  // Función para incrementar la cantidad
-  increaseQuantity = () => {
-    this.quantity++;
-  }
 
-  // Función para decrementar la cantidad
-  decreaseQuantity() {
-    // Verificar que la cantidad sea mayor que 1 antes de decrementar
-    if (this.quantity > 1) {
-      this.quantity--
-    }
-  }
+  
 }
