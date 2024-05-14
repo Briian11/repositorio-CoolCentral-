@@ -109,9 +109,10 @@
                     <h4> {{producto.precio}} </h4>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Sizing selections</option>
-                        <option value="1">M</option>
-                        <option value="2">L</option>
-                        <option value="3">XL</option>
+                        <option value="1">{{producto.sizing[0]}}</option>
+                        <option value="2">{{producto.sizing[1]}}</option>
+                        <option value="3">{{producto.sizing[2]}}</option>
+                        <option value="4">{{producto.sizing[3]}}</option>
                     </select>
                     <br>
                     <button (click)="agregarAlCarrito()"  class="btn btn-primary" id="botonAñadir">Add bag</button>
@@ -126,19 +127,19 @@
             <div class="card-header"><h3>Other</h3></div>
             <div class="card-body">
                 <div class="card text-bg-">
-                 <a  href="/**" class="card-link" routerLinkActive="active">
+                 <a   class="card-link" [routerLink]="'/product/'+ producto.related[0].id">
                      <img src="{{producto.related[0].imagen}}" class="card-img" alt="...">
                 </a>
                   </div>
                 <br>
                 <div class="card text-bg-">
-                    <a  href="/**" class="card-link" routerLinkActive="active">
+                    <a   class="card-link" [routerLink]="'/product/'+ producto.related[1].id">
                          <img src="{{producto.related[1].imagen}}" class="card-img" alt="...">
                     </a>
                   </div>
                 <br>
                 <div class="card text-bg-">
-                    <a  href="/**" class="card-link" routerLinkActive="active">
+                    <a   class="card-link" [routerLink]="'/product/'+ producto.related[2].id">
                          <img src="{{producto.related[2].imagen}}" class="card-img" alt="...">
                     </a>
                   </div>

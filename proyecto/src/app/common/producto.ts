@@ -6,9 +6,11 @@ export interface Producto {
     categoria: string
     precio: string
     related: Related[]
+    sizing: Related[]
   }
   
   export interface Related {
+    id: number
     imagen: string
   }
   

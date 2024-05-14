@@ -7,14 +7,19 @@
             "descripcion": "chaqueta de charoll de color negro",
             "categoria":"chaqueta", 
             "precio": "140€",
+            "sizing": ["S", "M", "L", "XL"],
             "related": [
                 {
+
+                    "id":2, 
                     "imagen":"./assets/sudadera_c.png"
                 }, 
                 {
+                    "id":3, 
                     "imagen": "./assets/pantalon_c.png"
                 },
                 {
+                    "id":4, 
                     "imagen": "./assets/camiseta1.png"
                 }
             ]
@@ -26,14 +31,18 @@
             "descripcion": "sudadera oversize de color negro",
             "categoria":"sudadera", 
             "precio": "60€", 
+            "sizing": ["S", "M", "L", "XL"],
             "related": [
                 {
+                    "id":4, 
                     "imagen": "./assets/camiseta1.png"
                 },
                 {
+                    "id":3, 
                     "imagen": "./assets/pantalon_c.png"
                 },
                 {
+                    "id":5, 
                     "imagen": "./assets/reloj1.png"
                 }
             ]
@@ -45,14 +54,18 @@
             "descripcion": "pantalones slim ",
             "categoria":"pantalones", 
             "precio": "50€",
+            "sizing": ["38", "40", "42", "46"],
             "related": [
                 {
+                    "id":4, 
                     "imagen": "./assets/camiseta1.png"
                 },
                 {
+                    "id":7, 
                     "imagen": "./assets/cup.png"
                 },
                 {
+                    "id":5, 
                     "imagen": "./assets/reloj1.png"
                 }
             ]
@@ -64,14 +77,18 @@
             "descripcion": "camiseta de palm de hombre",
             "categoria":"camisetas", 
             "precio": "40€",
+            "sizing": ["S", "M", "L", "XL"],
             "related": [
                 {
+                    "id": 1, 
                     "imagen": "./assets/Jacket.png"
                 },
                 {
+                    "id": 3, 
                     "imagen": "./assets/pantalon_c.png"
                 },
                 {
+                    "id": 5, 
                     "imagen": "./assets/reloj1.png"
                 }
             ]
@@ -83,15 +100,19 @@
             "descripcion": "reloj automatico de oro blanco bañado en negro",
             "categoria":"reloj", 
             "precio": "340€", 
+            "sizing": ["38mm", "40mm","42mm", "44mm"],
             "related": [
                 {
+                    "id":4,
                     "imagen": "./assets/camiseta1.png"
                 },
                 {
+                    "id":3,
                     "imagen": "./assets/pantalon_c.png"
                 },
                 {
-                    "imagen": "./assets/reloj1.png"
+                    "id":6,
+                    "imagen": "/assets/colgar1.png"
                 }
             ]
         }, 
@@ -102,14 +123,18 @@
             "descripcion": "Joyas de oro blanco",
             "categoria":"Joya", 
             "precio": "1340€",
+            "sizing": ["16mm", "18mm", "21mm", "23mm"],
             "related": [
                 {
+                    "id":4, 
                     "imagen": "./assets/camiseta1.png"
                 },
                 {
+                    "id":3, 
                     "imagen": "./assets/pantalon_c.png"
                 },
                 {
+                    "id":7, 
                     "imagen": "./assets/cup.png"
                 }
             ]
@@ -121,15 +146,19 @@
             "descripcion": "Gorra de terciopelo",
             "categoria":"Caps", 
             "precio": "20€",
+            "sizing": ["68/ 4,","71/6","72/1","72/8"],
             "related": [
                 {
+                    "id":4, 
                     "imagen": "./assets/camiseta1.png"
                 },
                 {
+                    "id":3, 
                     "imagen": "./assets/pantalon_c.png"
                 },
                 {
-                    "imagen": "./assets/reloj1.png"
+                    "id":8, 
+                    "imagen": "./assets/zapatillas2.png"
                 }
             ]
         },
@@ -139,15 +168,19 @@
             "imagen": ["./assets/zapatillas2.png","./assets/zapatillas2.png","./assets/zapatillas2.png"], 
             "descripcion": "Gorra de terciopelo",
             "categoria":"Caps", 
-            "precio": "140€", 
+            "precio": "140€",
+            "sizing": ["40", "42", "43", "44"], 
             "related": [
                 {
+                    "id":4, 
                     "imagen": "./assets/camiseta1.png"
                 },
                 {
+                    "id":3, 
                     "imagen": "./assets/pantalon_c.png"
                 },
                 {
+                    "id":5, 
                     "imagen": "./assets/reloj1.png"
                 }
             ]
