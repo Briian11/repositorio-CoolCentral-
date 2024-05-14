@@ -23,6 +23,8 @@ export class CartComponent implements OnInit {
   accountHolderName: string;
   accountNumber: string;
   quantity: number = 1; // Inicializar cantidad
+  totalCarrito: number = 0;
+  cantidadProductos: number = 0;
 
   constructor(private carritoService: CarritoService) {
    
@@ -42,9 +44,22 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
     
     this.productosEnCarrito  = this.carritoService.obtenerProductos();
+    this.calcularTotal();
+    this.actualizarCantidadProductos();
     
   }
-
+  eliminarProducto(producto: Producto) {
+    this.carritoService.eliminarDelCarrito(producto);
+    this.productosEnCarrito = this.carritoService.obtenerProductos();
+    this.calcularTotal();
+    this.actualizarCantidadProductos();
+  }
+  calcularTotal() {
+    this.totalCarrito = this.productosEnCarrito.reduce((acumulado, producto) => acumulado + parseFloat(producto.precio), 0);
+  }
+  actualizarCantidadProductos() {
+    this.cantidadProductos = this.productosEnCarrito.length;
+  }
 
   
 }

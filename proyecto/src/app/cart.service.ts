@@ -1,4 +1,3 @@
-// carrito.service.ts
 import { Injectable } from '@angular/core';
 import { Producto } from './common/catalogo';
 
@@ -40,5 +39,13 @@ export class CarritoService {
     return [];
   }
   //att. la cabra Juancri
+  eliminarDelCarrito(productoAEliminar: Producto) {
+    let productosEnCarrito: Producto[] = this.obtenerProductos();
+    const index = productosEnCarrito.findIndex(p => p.id === productoAEliminar.id);
+    if (index !== -1) {
+      productosEnCarrito.splice(index, 1);
+      localStorage.setItem(CART_ITEMS, JSON.stringify(productosEnCarrito));
+    }
+  }
 
 }
